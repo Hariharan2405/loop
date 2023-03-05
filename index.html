@@ -1,0 +1,62 @@
+<!DocType html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="operators">
+		<meta name="keywords" content="HTML,JavaScript">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Loop</title>
+	
+	
+	</head>
+	
+	<body>
+		<script>
+			//while
+			var a=0; b=parseInt(prompt("enter a value"));
+			while(a!=b){
+				if(a%2==1){
+					document.write(a);
+					a++;
+				}
+				else{
+					document.write("<br>");
+					a++;
+				}
+			}
+			document.write("<br>");
+			document.write("<br>");
+
+			//do-while
+			var a=0; b=parseInt(prompt("enter a value"));
+			do{
+				if(a%2==0){
+					document.write(a);
+					a++;
+				}
+				else{
+					document.write("<br>");
+					a++;
+				}
+			}
+			while(a!=b);
+			document.write("<br>");
+			document.write("<br>");
+
+			//for
+			var b=parseInt(prompt("enter a value"));
+			for(a=0; a!=2*b; a++){
+				if(a%2==1 && a<=b){
+					document.write(a);
+				}
+				else if(a%2==0 && a>b){
+					document.write(a-10);
+				}
+				else{
+					document.write("<br>");
+				}
+			}
+
+		</script>
+	</body>
+</html>
